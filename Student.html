@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	function student(id,name,dep,matmark,scimark,socmark)
+	{
+		this.id=id;
+		this.name=name;
+		this.dep=dep;
+		this.matmark=matmark;
+		this.scimark=scimark;
+        this.socmark=socmark;
+		this.sum1=sum;
+		this.avg1=avg;
+		this.grade1=grade;
+
+		}
+		function sum{
+			return (this.matmark+this.scimark+this.socmark);
+			}
+       function avg{
+
+		 return (this.matmark+this.scimark+this.socmark)/3;
+			}
+
+      function grade{
+           if(((this.matmark+this.scimark+this.socmark)/3)<90){
+			   return A;
+			   }
+            if(((this.matmark+this.scimark+this.socmark)/3)<70 && ((this.matmark+this.scimark+this.socmark)/3)>89){
+			   return B;
+			   }
+             if(((this.matmark+this.scimark+this.socmark)/3)<50 && ((this.matmark+this.scimark+this.socmark)/3)>69){
+			   return C;
+			   }
+			    if(((this.matmark+this.scimark+this.socmark)/3)<50){
+			   return D;
+			   }
+
+		  {
+  </script>
+ </head>
+ <body>
+  <script>
+  var one=new user(25,"adam","it",52,85,85);
+    document.write(one.id+""+one.name+""+one.dep+""+one.mobile+""+one.salary1+""+one.salary2);
+	document.write("<br>"one.sum1());
+    document.write("<br>"one.avg1());
+	document.write("<br>"one.grade1());
+
+
+  </script>
+ </body>
+</html>

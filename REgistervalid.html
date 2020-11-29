@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+    function validateForm()
+    {
+        var m=document.forms[0].elements[0].value;
+        if(m=="" || m==null)
+        {
+            alert("user name cannot be empty");
+            document.forms[0].elements[0].focus();
+        }
+    }
+	function validateForm1()
+    {
+        var m=document.forms[0].elements[0].value;
+        if(m=="" || m==null)
+        {
+            alert("please  enter a password for security");
+            document.forms[0].elements[0].focus();
+        }
+    }
+	function validateForm2()
+    {
+        var m=document.forms[0].elements[0].value;
+        if(m=="" || m==null)
+        {
+            alert("email id and mobile number cannot be empty");
+            document.forms[0].elements[0].focus();
+        }
+    }
+
+  </script>
+ </head>
+ <body>
+
+ 
+
+
+  <form name="name" action="" method="post" onsubmit="return validateForm()">
+
+ 
+
+  Enter your user Name : <input type="text" name="fname"/><br>
+
+
+  <input type="submit" value="submit"/><input type="reset" /><br>
+  </form>
+
+ 
+
+  <form name="password" action="" method="post" onsubmit="return validateForm1()">
+  Enter your password : <input type="text" name="pass"/><br>
+  Retype your password: <input type="text" name="re-pass"/><br>
+
+  <input type="submit" value="submit"/><input type="reset" /><br>
+  </form>
+  <form name="contact" action="" method="post" onsubmit="return validateForm2()">
+  Enter your Email Id: <input type="text" name="mail"/><br>
+  Enter your Mobile Number : <input type="text" name="mob"/><br>
+  <input type="submit" value="submit"/><input type="reset" />
+  </form>
+ </body>
+</html>
